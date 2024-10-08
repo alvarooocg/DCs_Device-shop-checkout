@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Shop Checkout</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Checkout</h1>
+        <div class="header__items">
+            <p class="items__paragraph">3 ITEMS</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main__left">
+            <ul class="left__list">
+                <li class="list__item">
+                    <div class="item__img">
+                        <img src="./assets/img/dccl--html-css-device-eshop-checkout/Gold.png" alt="Iphone photo" class="item__img--element">
+                    </div>  
+                    <div class="item__container">
+                        <div class="container__div">
+                            <p class="item__paragraph">Iphone 12 Pro</p>
+                            <p class="item__price">$999.00</p>
+                        </div>
+                        <p class="item__color">Golden</p>
+                        <div class="container__div--amount">
+                            <p class="item__amount">x 1</p>
+                            <button class="item__button"><img src="./assets/img/dccl--html-css-device-eshop-checkout/close-icon.svg" alt="Close button"></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class="item__img">
+                        <img src="./assets/img/dccl--html-css-device-eshop-checkout/Blue.png" alt="Iphone photo" class="item__img--element">
+                    </div>  
+                    <div class="item__container">
+                        <div class="container__div">
+                            <p class="item__paragraph">Apple Watch</p>
+                            <p class="item__price">$399.00</p>
+                        </div>
+                        <p class="item__color">Blue</p>
+                        <div class="container__div--amount">
+                            <p class="item__amount">x 1</p>
+                            <button class="item__button"><img src="./assets/img/dccl--html-css-device-eshop-checkout/close-icon.svg" alt="Close button"></button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list__item">
+                    <div class="item__img">
+                        <img src="./assets/img/dccl--html-css-device-eshop-checkout/iMac=Front 1.png" alt="Iphone photo" class="item__img--element">
+                    </div>  
+                    <div class="item__container">
+                        <div class="container__div">
+                            <p class="item__paragraph">iMac</p>
+                            <p class="item__price">$1199.00</p>
+                        </div>
+                        <p class="item__color">Green</p>
+                        <div class="container__div--amount">
+                            <p class="item__amount">x 1</p>
+                            <button class="item__button"><img src="./assets/img/dccl--html-css-device-eshop-checkout/close-icon.svg" alt="Close button"></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="left__separation"></div>
+            <div class="left__pricing">
+                <div class="pricing__coupon">
+                    <input type="text" placeholder="Enter coupon code" class="coupon__input">
+                    <button class="coupon__button">Apply Coupon</button>
+                </div>
+                <div class="pricing__subtotal">
+                    <p class="subtotal__paragraph">Sub total</p>
+                    <p class="subtotal__price">$2597.00</p>
+                </div>
+                <div class="pricing__tax">
+                    <p class="tax__paragraph">Tax</p>
+                    <p class="tax__price">$623.28</p>
+                </div>
+                <div class="pricing__total">
+                    <p class="total__paragraph">Total</p>
+                    <p class="total__price">$3220.28</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__right">
+            <h3 class="right__subtitle">Contact Information</h3>
+            <p class="right__name--paragraph">First & Last name</p>
+            <input type="text" placeholder="Enter first & last name" class="right__name--input">
+            <p class="right__email--paragraph">Email Address</p>
+            <input type="text" placeholder="Enter email address" class="right__email--input">
+            <div class="right__location">
+                <div class="location__country">
+                    <p class="country__paragraph">Country</p>
+                    <select name="countries" id="countries" class="country__select">
+                        <option value="ES">Spain</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                        <option value="IT">Italy</option>
+                        <option value="PT">Portugal</option>
+                        <option value="GB">Gran Bretain</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="BE">Belgium</option>
+                        <option value="CH">Switerland</option>
+                        <option value="SE">Sweeden</option>
+                        <option value="NO">Norwat</option>
+                        <option value="FI" selected>Finland</option>
+                        <option value="DK">Denmark</option>
+                        <option value="GR">Greece</option>
+                        <option value="PL">Poland</option>
+                        <option value="AT">Austria</option>
+                    </select>
+                </div>
+                <div class="location__code">
+                    <p class="code__paragraph">Postal Code</p>
+                    <input type="text" placeholder="00270" class="code__input" >
+                </div>
+            </div>
+            <input type="button" value="Continue" class="right__button">
+        </section>
+    </main>
+</body>
+</html>
